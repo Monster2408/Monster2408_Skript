@@ -21,12 +21,12 @@
         <span></span>
     </div>
     <div class="logo">
-        <a href="<?php echo $func->getUrl(); ?>" class="blog-logo-text">Monster</a>
+        <a href="<?php echo $func->getUrl(); ?>" class="blog-logo-text">もんすたぁのSkript講座</a>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="<?php echo $func->getUrl(); ?>/desk-item/"><span class="title">Desk Item</span><span class="sub-title">デスク周り</span></a></li>
-            <li><a href="<?php echo $func->getUrl(); ?>/pc-accessory/"><span class="title">PC Accessory</span><span class="sub-title">PC周辺機器</span></a></li>
+            <!-- <li><a href="<?php echo $func->getUrl(); ?>/desk-item/"><span class="title">Desk Item</span><span class="sub-title">デスク周り</span></a></li>
+            <li><a href="<?php echo $func->getUrl(); ?>/pc-accessory/"><span class="title">PC Accessory</span><span class="sub-title">PC周辺機器</span></a></li> -->
         </ul>
     </div>
 </header>
