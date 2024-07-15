@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    .admin-menu {
+        height: 20px;
+        font-size: 15px;
+        background-color: #000;
+        color: #fff;
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 35px;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    .logo {
+        margin-top: 15px;
+        font-size: 30px;
+        font-weight: 700;
+        margin-left: 10px;
+        .blog-logo-text {
+            color: #333;
+            text-decoration: none;
+            font-family: "Alegreya SC", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+    .nav {
+        margin-top: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f1f1f1;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                a {
+                    margin: 0 10px;
+                    font-size: 20px;
+                    color: #333;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    &:hover {
+                        color: #000;
+                    }
+                    .title {
+                        font-size: 20px;
+                    }
+                    .sub-title {
+                        font-size: 14px;
+                    }
+                }
+                &:hover {
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+    }
+    .menu-btn {
+        display: none;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row-reverse;
+        .nav {
+            display: none;
+        }
+        .menu-btn {
+            display: block;
+        }
+    }
+}
