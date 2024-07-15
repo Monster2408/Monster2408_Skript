@@ -106,6 +106,9 @@ function load_feed(new_post_limit = 10) {
             } else {
                 post_list.push(getCardObject(title, image, dateStr, "https://monster2408.com/skript-dev/?p=" + link_id, main_category));
             }
+            if (categories.indexOf("おすすめ") == -1) {
+                continue;
+            }
             if (location.href.match(/localhost/)) {
                 data_text += getCardHtml(title, image, dateStr, "https://localhost/?p=" + link_id, main_category);
             } else {
