@@ -67,13 +67,13 @@ class MyFunction {
         $this->og_title = $title;
         $this->og_description = $title;
         $this->og_site_name = $conf["title"];
-        $this->og_image = "https://monster2408.com/blog/";
+        $this->og_image = "https://monster2408.com/blog2/";
         if ($page_id != -1) {
             $this->og_type = "article";
-            $this->og_url = "https://monster2408.com/blog/?p=" . $page_id;
+            $this->og_url = "https://monster2408.com/blog2/?p=" . $page_id;
         } else {
             $this->og_type = "website";
-            $this->og_url = "https://monster2408.com/blog/";
+            $this->og_url = "https://monster2408.com/blog2/";
         }
 
         $language_code = "en";

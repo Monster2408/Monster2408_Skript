@@ -16,7 +16,7 @@ function load_post(post_id) {
             var dateStr = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
             var description = item.getElementsByTagName("content:encoded")[0].textContent;
             // descriptionにimgタグがあるかどうかを判定
-            var image = "https://monster2408.com/blog/wp-content/themes/cocoon-master/images/no-image-320.png";
+            var image = "https://monster2408.com/blog2/wp-content/themes/cocoon-master/images/no-image-320.png";
             if (description.match(/<img[^>]+src="([^">]+)"/) != null) {
                 image = description.match(/<img[^>]+src="([^">]+)"/)[1];
             }
@@ -36,7 +36,7 @@ function load_post(post_id) {
     }
     const req = new XMLHttpRequest();
     req.addEventListener("load", reqListener);
-    var url = "https://monster2408.com/blog/feed/";
+    var url = "https://monster2408.com/blog2/feed/";
     // 現在URLがlocalhostの場合はローカルのXMLを読み込む
     if (location.href.match(/localhost/)) {
         url = "https://localhost/test.xml";
